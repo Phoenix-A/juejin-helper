@@ -40,19 +40,19 @@ const signIn = async () => {
         const totalPoint = await API.queryTotalPoint()
         console.log(`当前矿石：${totalPoint}`)
         console.log(`签到成功`)
-        await sendEmail({
-            to: config.user.email,
-            text: `签到成功，拥有矿石：${totalPoint}`,
-            subject: '【掘金】签到成功'
-        })
+//         await sendEmail({
+//             to: config.user.email,
+//             text: `签到成功，拥有矿石：${totalPoint}`,
+//             subject: '【掘金】签到成功'
+//         })
     } catch (err) {
         console.log(`签到失败`)
         console.log(err)
-        await sendEmail({
-            to: config.user.email,
-            text: `签到失败：${err.message}`,
-            subject: '【掘金】签到失败'
-        })
+//         await sendEmail({
+//             to: config.user.email,
+//             text: `签到失败：${err.message}`,
+//             subject: '【掘金】签到失败'
+//         })
 
     }
 }
