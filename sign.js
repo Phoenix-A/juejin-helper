@@ -1,7 +1,7 @@
 const JuejinHttp = require('./juejin/api')
 const config = require("./config/index")
 const { getCookie } = require('./juejin/cookie')
-const { sendEmail } = require(`./utils/email`)
+// const { sendEmail } = require(`./utils/email`)
 const signIn = async () => {
     try {
         const cookie = await getCookie()
